@@ -1,7 +1,6 @@
 @import "reset";
-@import "settings/fonts";
-@import "settings/colors";
-
-body {
-  font-family: $font-base;
-}
+@import "styles";
+@import "./elements/header";
+@import "./elements/threecolumns";
+@import "./elements/simplesteps";
+@import "./elements/aboutus";

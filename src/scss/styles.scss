@@ -1,0 +1,8 @@
+@import "settings/fonts";
+@import "settings/colors";
+
+body {
+  font-family: $font-base;
+  font-weight: 400;
+  color: $color-darkGrey;
+}

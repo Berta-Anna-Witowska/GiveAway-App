@@ -1,0 +1,11 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+
+@mixin button {
+  background: none;
+  border: none;
+  margin: 1rem 2rem;
+  padding: 0.5rem;
+  font-family: inherit;
+  @content;
+}
