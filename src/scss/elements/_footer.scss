@@ -1,0 +1,26 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+@import "../settings/mixins";
+
+.footer {
+  width: 100%;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  font-size: 1rem;
+  &-copyright {
+    width: 40vw;
+    position: absolute;
+    left: 45%;
+  }
+  &-socialmedia {
+    img {
+      width: 1.8rem;
+      height: 1.8rem;
+
+      margin: 0.5rem;
+    }
+  }
+}

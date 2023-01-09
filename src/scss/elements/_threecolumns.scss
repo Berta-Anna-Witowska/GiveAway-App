@@ -3,7 +3,7 @@
 @import "../settings/mixins";
 
 .threecolumns {
-  width: 100vw;
+  max-width: 100vw;
   height: 20rem;
   //   padding: 0 10rem;
   background: transparent url("../assets/3Columns-Background.png") 0% 0%

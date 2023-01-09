@@ -33,4 +33,8 @@
       align-self: flex-end;
     }
   }
+  &-img {
+    width: 50%;
+    object-fit: cover;
+  }
 }

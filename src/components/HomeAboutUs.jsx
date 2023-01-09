@@ -20,7 +20,7 @@ export default function HomeAboutUs() {
         </p>
         <img className="aboutus-description-img" src={signature}></img>
       </div>
-      <img className="aboutus-img" src={peoplePhoto} width="50%"></img>
+      <img className="aboutus-img" src={peoplePhoto}></img>
     </section>
   );
 }
