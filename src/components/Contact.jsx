@@ -5,7 +5,7 @@ import decoration from "../assets/Decoration.svg";
 export default function Contact() {
   return (
     <>
-      <section className="contact">
+      <section id="contact" className="contact">
         <div className="overlay">
           <form className="contact-form">
             <h2>Skontaktuj się z nami</h2>
@@ -39,6 +39,7 @@ export default function Contact() {
               type="text"
               name="message"
               placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              rows={5}
               required
             ></textarea>
             <button className="btn btn-contactform" type="submit" name="submit">

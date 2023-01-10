@@ -1,0 +1,88 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+@import "../settings/mixins";
+
+.signup {
+  .btn {
+    @include button;
+
+    font-size: 1.2rem;
+
+    &:hover {
+      border: 1px solid $color-darkGrey;
+    }
+
+    &-signinBar {
+      margin: 1rem 1.5rem;
+      font-size: 0.9rem;
+      &:hover {
+        border-color: $color-yellow;
+      }
+    }
+  }
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  &-formsection {
+    width: 100%;
+    height: 80%;
+  }
+  &-box {
+    height: 100%;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      font-size: 2.3rem;
+    }
+    img {
+      margin: 2rem 0;
+    }
+
+    .signup-form {
+      width: 25%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .input-box {
+        width: 50%;
+        margin: 1rem 0;
+        padding: 2rem 5rem 3rem 5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-lightGrey;
+        label {
+          margin: 1rem 0 0.5rem 0;
+          align-self: flex-start;
+          font-weight: 600;
+          font-size: 1rem;
+          text-align: start;
+        }
+        input {
+          @include input;
+          width: 95%;
+        }
+      }
+      .signup-buttons {
+        width: 110%;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        .btn-signup {
+          margin: 0.2rem 0;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}

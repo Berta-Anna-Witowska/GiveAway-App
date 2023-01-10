@@ -5,7 +5,7 @@ import decoration from "../assets/Decoration.svg";
 
 export default function HomeAboutUs() {
   return (
-    <section className="aboutus">
+    <section id="aboutus" className="aboutus">
       <div className="aboutus-description">
         <h2>O nas</h2>
         <img

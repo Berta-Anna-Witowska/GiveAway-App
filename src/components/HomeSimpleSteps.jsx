@@ -1,4 +1,5 @@
 import React from "react";
+import {useNavigate} from "react-router-dom";
 
 import decoration from "../assets/Decoration.svg";
 import icon1 from "../assets/Icon-1.svg";
@@ -34,8 +35,10 @@ export default function HomeSimpleSteps() {
     },
   ];
 
+  const navigate = useNavigate();
+
   return (
-    <section className="simplesteps">
+    <section id="simplesteps" className="simplesteps">
       <h2>Wystarczą 4 proste kroki</h2>
       <img
         src={decoration}
@@ -52,7 +55,10 @@ export default function HomeSimpleSteps() {
           </div>
         ))}
       </div>
-      <button className="btn btn-header">
+      <button
+        className="btn btn-header"
+        onClick={() => navigate("/oddaj-rzeczy")}
+      >
         Oddaj
         <br />
         rzeczy

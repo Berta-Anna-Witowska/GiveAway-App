@@ -22,7 +22,7 @@
 
   &-form {
     width: 30rem;
-    margin: 12rem 6rem 0 0;
+    margin: 15vh 6rem 0 0;
 
     display: flex;
     flex-direction: column;
@@ -55,18 +55,18 @@
   }
   textarea {
     width: 100%;
-    height: 6.5rem;
+    // height: 6.5rem;
     margin: 0.5rem 0 2.6rem 0;
   }
   input,
   textarea {
     border: none;
     border-bottom: 1px solid $color-grey;
+    font-family: $font-base;
     font-size: 1.1rem;
     &::placeholder {
-      /* Chrome, Firefox, Opera, Safari 10.1+ */
       color: $color-darkGrey;
-      opacity: 0.26; /* Firefox */
+      opacity: 0.26;
     }
   }
   label {
