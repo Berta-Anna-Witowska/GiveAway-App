@@ -72,6 +72,22 @@
           @include input;
           width: 95%;
         }
+        .error {
+          color: red;
+          font-size: 0.85rem;
+          margin-top: 0.4rem;
+          font-weight: 600;
+          text-align: left;
+          align-self: flex-start;
+        }
+        .success {
+          margin-bottom: 2rem;
+          color: mediumseagreen;
+          font-size: 1.1rem;
+          font-weight: 600;
+          line-height: 1.2rem;
+          text-align: center;
+        }
       }
       .signup-buttons {
         width: 110%;

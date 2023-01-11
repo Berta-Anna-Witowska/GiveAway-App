@@ -1,9 +1,18 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
+import {supabase} from "../serviceWorker";
 
 export default function SignInBar({isLogged}) {
   const navigate = useNavigate();
-  console.log(isLogged);
+
+  const logoutUser = async () => {
+    let {error} = await supabase.auth.signOut();
+    if (!error) {
+      console.log("Zostałeś wylogowany.");
+      navigate("/wylogowano");
+    }
+    return;
+  };
 
   return (
     <>
@@ -26,16 +35,15 @@ export default function SignInBar({isLogged}) {
         )}
         {isLogged && (
           <>
+            <span>Cześć email</span>
+
             <button
               className="btn btn-signinBar"
               onClick={() => navigate("/oddaj-rzeczy")}
             >
               Oddaj rzeczy
             </button>
-            <button
-              className="btn btn-signinBar"
-              onClick={() => navigate("/wylogowano")}
-            >
+            <button className="btn btn-signinBar" onClick={logoutUser}>
               Wyloguj
             </button>
           </>

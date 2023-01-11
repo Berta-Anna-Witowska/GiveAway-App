@@ -5,5 +5,5 @@ const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
 export const supabase = createClient(supabaseUrl, supabaseKey);
 
 export const emailJS_serviceKEY = import.meta.env.VITE_EMAILJS_SERVICEKEY;
-export const template = "template_mail";
+export const template = "template_mail_giveaway";
 export const publicKEY = import.meta.env.VITE_EMAILJS_PUBLICKEY;

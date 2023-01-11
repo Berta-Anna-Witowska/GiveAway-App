@@ -4,6 +4,7 @@ import {Link} from "react-scroll";
 
 export default function Navbar() {
   const navigate = useNavigate();
+
   return (
     <>
       <nav className="navBar">
