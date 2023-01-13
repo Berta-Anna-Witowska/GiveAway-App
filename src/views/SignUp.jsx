@@ -61,6 +61,13 @@ export default function SignUp() {
     });
 
     if (error) {
+      setText1("");
+      setText2("");
+      setText3("");
+      setBorderColor("#737373");
+      setBorderColor2("#737373");
+      setBorderColor3("#737373");
+
       setText4("Pojawił się problem. Spróbuj jeszcze raz!");
       return;
     }
@@ -104,8 +111,7 @@ export default function SignUp() {
                   style={{borderColor: borderColor3}}
                 ></input>
                 <span className="error">
-                  {text3}
-                  {text4}
+                  {text3} {text4}
                 </span>
               </div>
               <div className="signup-buttons">
