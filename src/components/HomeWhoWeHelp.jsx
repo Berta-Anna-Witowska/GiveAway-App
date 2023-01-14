@@ -7,16 +7,19 @@ export default function HomeWhoWeHelp() {
   const [posts, setPosts] = useState(data.fundations);
   const [postsItems, setPostsItems] = useState(posts.items);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(3);
+  const [postsPerPage] = useState(3);
 
   const showFundations = () => {
     setPosts(data.fundations);
+    setCurrentPage(1);
   };
   const showOrganizations = () => {
     setPosts(data.organizations);
+    setCurrentPage(1);
   };
   const showLocalcollections = () => {
     setPosts(data.localcollections);
+    setCurrentPage(1);
   };
 
   useEffect(() => {
@@ -35,7 +38,7 @@ export default function HomeWhoWeHelp() {
 
   return (
     <section id="whodowehelp" className="whodowehelp">
-      <h2>Komu pomagamy?</h2>
+      <h2 className="whodowehelp-header">Komu pomagamy?</h2>
       <img
         src={decoration}
         className="decoration-line"
@@ -57,16 +60,18 @@ export default function HomeWhoWeHelp() {
         </button>
       </div>
       <WhoDoWeHelp posts={posts} currentPosts={currentPosts} />
-      <Pagination
-        postsPerPage={postsPerPage}
-        totalPosts={totalPosts}
-        paginate={paginate}
-      />
+      {totalPosts > 3 && (
+        <Pagination
+          postsPerPage={postsPerPage}
+          totalPosts={totalPosts}
+          paginate={paginate}
+        />
+      )}
     </section>
   );
 }
+
 function WhoDoWeHelp({posts, currentPosts}) {
-  console.log(currentPosts);
   return (
     <>
       {posts && (
@@ -78,9 +83,11 @@ function WhoDoWeHelp({posts, currentPosts}) {
       {currentPosts && (
         <>
           {currentPosts.map((post, i) => (
-            <div className="posts-postslist" key={i}>
-              <h1 className="post-title">{post.title}</h1>
-              <h2 className="post-subtitle">{post.subtitle}</h2>
+            <div className="posts-list" key={i}>
+              <div className="post-headers">
+                <h1 className="post-title">{post.title}</h1>
+                <h2 className="post-subtitle">{post.subtitle}</h2>
+              </div>
               <span className="post-things">{post.things}</span>
             </div>
           ))}

@@ -7,12 +7,6 @@ export default function Pagination({postsPerPage, totalPosts, paginate}) {
     pageNumbers.push(i);
   }
 
-  // if (totalPosts <= 3) {
-  //   setPageNumbers([]);
-  // }
-
-  console.log(totalPosts);
-
   return (
     <nav>
       <ul className="pagination">
