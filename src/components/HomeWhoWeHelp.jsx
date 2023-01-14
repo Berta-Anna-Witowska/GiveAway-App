@@ -83,7 +83,7 @@ function WhoDoWeHelp({posts, currentPosts}) {
       {currentPosts && (
         <>
           {currentPosts.map((post, i) => (
-            <div className="posts-list" key={i}>
+            <div className={`posts-list post${i + 1}`} key={i}>
               <div className="post-headers">
                 <h1 className="post-title">{post.title}</h1>
                 <h2 className="post-subtitle">{post.subtitle}</h2>

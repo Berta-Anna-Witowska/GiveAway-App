@@ -38,12 +38,17 @@
     font-size: 1.3rem;
     text-align: center;
   }
+  .post2 {
+    border-top: 1px solid $color-grey;
+    border-bottom: 1px solid $color-grey;
+  }
   .posts-list {
     width: 80%;
     padding: 1.7rem 0;
 
     display: flex;
     justify-content: space-between;
+
     .post-headers {
       .post-title,
       .post-subtitle {
@@ -59,6 +64,7 @@
       }
     }
   }
+
   .pagination {
     display: flex;
     .page-item {
