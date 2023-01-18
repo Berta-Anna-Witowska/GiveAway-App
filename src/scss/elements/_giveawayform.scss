@@ -4,8 +4,49 @@
 
 .giveaway-form {
   width: 100vw;
-  min-height: 100vw;
+  min-height: 100vh;
   .form-banner {
     width: 100vw;
+    padding: 3rem 7rem;
+    background-color: $color-yellow;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      margin-bottom: 0.5rem;
+      font-size: 2.2rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .form-box {
+    min-height: 80vh;
+    background-image: url("../assets/Background-Form.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .thanks-div {
+    width: 45%;
+    padding: 16% 10%;
+
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50%;
+      margin: 2.4rem;
+    }
   }
 }

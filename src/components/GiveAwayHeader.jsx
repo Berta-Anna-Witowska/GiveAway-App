@@ -12,7 +12,7 @@ export default function GiveAwayHeader() {
       <div className="giveaway-header-textbox">
         <h1>Oddaj rzeczy, których już nie chcesz</h1>
         <h1>POTRZEBUJĄCYM</h1>
-        <img src={decoration} alt="" />
+        <img src={decoration} alt="linia dekoracyjna" />
         <h2>Wystarczą 4 proste kroki:</h2>
         <div className="steps">
           <div className="step">

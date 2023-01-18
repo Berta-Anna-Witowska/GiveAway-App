@@ -5,6 +5,9 @@
 .giveaway-header {
   min-height: 80vh;
   background-image: url("../assets/Form-Hero-Image.jpg");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
 
   &-textbox {
     width: 40vw;
