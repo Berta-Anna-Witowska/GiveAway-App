@@ -3,6 +3,10 @@ import {useNavigate} from "react-router-dom";
 
 import {supabase} from "../serviceWorker.jsx";
 
+import GiveAwayHeader from "../components/GiveAwayHeader.jsx";
+import GiveAwayForm from "../components/GiveAwayForm.jsx";
+import Contact from "../components/Contact.jsx";
+
 export default function GiveAway() {
   const navigate = useNavigate();
 
@@ -19,7 +23,7 @@ export default function GiveAway() {
       }
       if (!session) {
         setIsLogged(false);
-        navigate("/logowanie");
+        // navigate("/logowanie");
         return;
       }
       setIsLogged(true);
@@ -28,5 +32,11 @@ export default function GiveAway() {
     isUserLogged();
   }, [isLogged]);
 
-  return <h1>Oddaj rzeczy</h1>;
+  return (
+    <div>
+      <GiveAwayHeader />
+      <GiveAwayForm />
+      <Contact />
+    </div>
+  );
 }

@@ -52,9 +52,24 @@ export default function SingnIn() {
       return;
     }
     console.log("Logowanie powiodło się!");
-    navigate("/");
+    navigate("/");      
   };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   return (
     <>
       <section className="signup">

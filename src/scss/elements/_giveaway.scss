@@ -1,3 +1,62 @@
 @import "../settings/fonts";
 @import "../settings/colors";
 @import "../settings/mixins";
+
+.giveaway-header {
+  min-height: 80vh;
+  background-image: url("../assets/Form-Hero-Image.jpg");
+
+  &-textbox {
+    width: 40vw;
+    margin-top: 3vw;
+    margin-right: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      margin-top: 0.5rem;
+      font-size: 2rem;
+    }
+    img {
+      margin: 2rem 0;
+    }
+    h2 {
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+    .steps {
+      display: flex;
+      .step {
+        width: 8rem;
+        height: 8rem;
+        rotate: 45deg;
+        border: 1px solid $color-darkGrey;
+        margin: 0.8rem;
+
+        position: relative;
+
+        &-text {
+          max-width: 70%;
+          rotate: -45deg;
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 0.7rem;
+          left: 0.6rem;
+          h2 {
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+          }
+          span {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}

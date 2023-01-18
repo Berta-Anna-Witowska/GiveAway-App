@@ -1,0 +1,11 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+@import "../settings/mixins";
+
+.giveaway-form {
+  width: 100vw;
+  min-height: 100vw;
+  .form-banner {
+    width: 100vw;
+  }
+}
